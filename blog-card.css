@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+}
+
+.desktop {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.main-card-container {
+  width: 25%;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 1.25rem;
+  box-shadow: 8px 8px 0 0 hsl(0, 0%, 0%);
+}
+
+.top-image-container {
+  width: 100%;
+  height: auto;
+}
+
+.top-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.text-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 0.75rem;
+}
+
+.learning-chip {
+  width: fit-content;
+  height: auto;
+  padding: 0.25rem 0.75rem;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 0.25rem;
+}
+
+.learning-chip p {
+  color: hsl(0, 0%, 7%);
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.3125rem;
+}
+
+.published-date {
+  width: 100%;
+  height: auto;
+}
+
+.published-date p {
+  color: hsl(0, 0%, 7%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+}
+
+.heading-text {
+  width: 100%;
+  height: auto;
+}
+
+.heading-text h1 {
+  color: hsl(0, 0%, 7%);
+  font-size: clamp(1.25rem, 0.5vw + 1.25rem, 1.5rem);
+  font-weight: 800;
+  line-height: 1.3125rem;
+}
+
+.heading-text h1:hover {
+  cursor: pointer;
+  color: hsl(47, 88%, 63%);
+}
+
+.body-text {
+  width: 100%;
+  height: auto;
+}
+
+.body-text p {
+  color: hsl(0, 0%, 42%);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+  text-align: start;
+}
+
+.profile-picture-and-name {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.profile-pic {
+  width: fit-content;
+  height: auto;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-name {
+  width: fit-content;
+  height: auto;
+}
+
+.profile-name p {
+  color: hsl(0, 0%, 7%);
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.3125rem;
+}
+
+/* media query for screen size 375px */
+@media (max-width: 375px) {
+  .desktop {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-card-container {
+    width: 87.2%;
+    margin: 0 auto;
+  }
+
+  .top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .learning-chip p {
+    font-size: 0.75rem;
+  }
+
+  .published-date p {
+    font-size: 0.75rem;
+  }
+
+  .heading-text h1 {
+    font-size: clamp(1.25rem, 0.5vw + 1.25rem, 1.5rem);
+  }
+
+  .body-text p {
+    font-size: 0.875rem;
+  }
+}
+
+/* media query for screen size 480px */
+@media (max-width: 480px) {
+  .desktop {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-card-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .learning-chip p {
+    font-size: 0.875rem;
+  }
+
+  .published-date p {
+    line-height: 1.3125rem;
+  }
+
+  .heading-text h1 {
+    font-size: clamp(1.25rem, 0.5vw + 1.25rem, 1.5rem);
+  }
+
+  .body-text p {
+    line-height: 1.3125rem;
+  }
+}
+
+/* media query for Tablet size (481 - 768px) */
+@media (max-width: 481px) and (max-width: 768px) {
+  .desktop {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-card-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .learning-chip p {
+    font-size: 0.875rem;
+  }
+
+  .published-date p {
+    line-height: 1.3125rem;
+  }
+
+  .heading-text h1 {
+    font-size: clamp(1.25rem, 0.5vw + 1.25rem, 1.5rem);
+  }
+
+  .body-text p {
+    line-height: 1.3125rem;
+  }
+}
+
+/* Large devices (laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .desktop {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .main-card-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .top-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .learning-chip p {
+    font-size: 0.875rem;
+  }
+
+  .published-date p {
+    line-height: 1.3125rem;
+  }
+
+  .heading-text h1 {
+    font-size: clamp(1.25rem, 1vw + 1.25rem, 1.5rem);
+  }
+
+  .body-text p {
+    font-size: 0.875rem;
+  }
+}
