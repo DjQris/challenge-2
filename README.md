@@ -1,1 +1,1 @@
-# This is a Readme file for challenge number 2
+# Responsive design for a blog preview card
